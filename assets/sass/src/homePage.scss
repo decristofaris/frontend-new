@@ -10,7 +10,7 @@
      margin: 20px auto 20px auto;
      background-color: #fceff5;
      border-radius: 8px;
-     box-shadow: 0 0 10px 1px #aaa;
+     box-shadow: 0 0 10px 1px #aaa; 
 
 
      //----------> CONTAINER : HEADER <----------//
@@ -79,7 +79,9 @@
           nav {
 
                display: flex;
-               margin-top: 5px;
+               margin-top: 5px;    
+               flex-wrap: wrap;  
+               background-size: cover;         
 
 
                //----------> NAV BAR : A <----------//

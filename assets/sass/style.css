@@ -54,6 +54,8 @@ body {
 .container header nav {
   display: flex;
   margin-top: 5px;
+  flex-wrap: wrap;
+  background-size: cover;
 }
 .container header nav a {
   position: relative;
