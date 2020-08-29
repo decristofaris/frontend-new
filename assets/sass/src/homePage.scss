@@ -16,137 +16,140 @@
      //----------> CONTAINER : HEADER <----------//
      header {
 
-          height: 650px;
-          background-image: url(../images/headerPhoto.jpg);
-          border-radius: 8px 8px 0 0;
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 5px;
+          background-color: rgba($color: #fff, $alpha: 0.8);
+          position: sticky;
+          top: 0;
 
 
-          //----------> HEADER : HEADER BAR <----------//
-          .headerBar {
+          //----------> HEADER : LOGO HOME PAGE <----------//
+          .logoHomePage {
+          
+               display: flex;
+               margin: 5px 0 0 10px;
+               transform: scale(0.7);
+               perspective: 1000px;
+               height: 80px;
+                    
+               
+               //----------> LOGO HOME PAGE : IMG <----------//
+               img {
+
+                    cursor: default;
+                    transition: 1s linear;
+
+               }
+
+
+               //----------> LOGO HOME PAGE : H1 <----------//
+               h1 {
+               
+                    font-size: 40px;
+                    font-weight: 400;
+                    font-family: "Operator Mono", sans-serif;
+                    font-style: italic;
+                    margin: auto 0;
+                    cursor: default;
+                    transition: 1s linear;
+                         
+               }
+
+
+               //----------> LOGO HOME PAGE : HOVER > IMG <----------//
+               &:hover img {
+
+                    transform: rotateY(1080deg);
+
+               }
+
+
+               //----------> LOGO HOME PAGE : HOVER > H1 <----------//
+               &:hover h1 {
+
+                    transform: rotateX(1080deg);
+
+               }
+          
+          } // END/ .logoHomePage <-----//
+
+
+          //----------> HEADER : NAV BAR <----------//
+          nav {
 
                display: flex;
-               justify-content: space-between;
+               margin-top: 5px;
 
 
-               //----------> HEADER BAR : LOGO HOME PAGE <----------//
-               .logoHomePage {
-          
-                    display: flex;                    
-                    margin: 5px 0 0 10px;
-                    transform: scale(0.7);
-                    perspective: 1000px;
-                    height: 80px;
-               
-               
-                    //----------> LOGO HOME PAGE : IMG <----------//
-                    img {
+               //----------> NAV BAR : A <----------//
+               a {
 
-                         cursor: default;
-                         transition: 1s linear;
-
-                    }
+                    position: relative;
+                    color: #666;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-style: italic;
+                    text-decoration: none;
+                    margin: auto 50px auto 0;
+                    transition: .2s linear;
 
 
-                    //----------> LOGO HOME PAGE : H1 <----------//
-                    h1 {
-               
-                         font-size: 40px;
-                         font-weight: 400;
-                         font-family: "Operator Mono", sans-serif;
-                         font-style: italic;
-                         margin: auto 0;
-                         cursor: default;
-                         transition: 1s linear;
-                         
-                    }
+                    //----------> A : LAST-CHILD <----------//
+                    &:last-child {
 
-
-                    //----------> LOGO HOME PAGE : HOVER > IMG <----------//
-                    &:hover img {
-
-                         transform: rotateY(1080deg);
+                         margin-right: 200px;
 
                     }
 
 
-                    //----------> LOGO HOME PAGE : HOVER > H1 <----------//
-                    &:hover h1 {
+                    //----------> A : BEFORE <----------//
+                    &::before {
 
-                         transform: rotateX(1080deg);
+                         position: absolute;
+                         content: '';
+                         bottom: -3px;
+                         left: 0;
+                         height: 2px;
+                         width: 100%;
+                         background-color: #222;
+                         visibility: hidden;
+                         transform: scaleX(0);
+                         transition: all 0.3s ease-in-out 0s;
 
                     }
-          
-               } // END/ .logoHomePage <-----//
 
 
-               //----------> HEADER : NAV BAR <----------//
-               nav {
+                    //----------> A : HOVER <----------//
+                    &:hover {
 
-                    display: flex;
-                    margin-top: 5px;
+                         color: #222;
 
-
-                    //----------> NAV BAR : A <----------//
-                    a {
-
-                         position: relative;
-                         color: #666;
-                         font-size: 20px;
-                         font-weight: 400;
-                         font-style: italic;
-                         text-decoration: none;
-                         margin: auto 50px auto 0;
-                         transition: .2s linear;
+                    }
 
 
-                         //----------> A : LAST-CHILD <----------//
-                         &:last-child {
+                    //----------> A : HOVER::BEFORE <----------//
+                    &:hover::before {
 
-                              margin-right: 200px;
+                         visibility: visible;
+                         transform: scaleX(1);
 
-                         }
+                    }
 
+               } // END/ a <-----//
 
-                         //----------> A : BEFORE <----------//
-                         &::before {
+          } // END/ nav <-----//
 
-                              position: absolute;
-                              content: '';
-                              bottom: -3px;
-                              left: 0;
-                              height: 2px;
-                              width: 100%;
-                              background-color: #222;
-                              visibility: hidden;
-                              transform: scaleX(0);
-                              transition: all 0.3s ease-in-out 0s;
-
-                         }
-
-
-                         //----------> A : HOVER <----------//
-                         &:hover {
-
-                              color: #222;
-
-                         }
-
-
-                         //----------> A : HOVER::BEFORE <----------//
-                         &:hover::before {
-
-                              visibility: visible;
-                              transform: scaleX(1);
-
-                         }
-
-                    } // END/ a <-----//
-
-               } // END/ nav <-----//
-
-          } // END/ .headerBar <-----//
-     
      } // END/ header <-----//
+
+
+     //----------> CONTAINER : HEADER PHOTO <----------//
+     .headerPhoto {
+
+          height: 650px;
+          background-image: url(../images/headerPhoto.jpg);
+
+     }
 
 
      //----------> CONTAINER : PRODUCTS <----------//

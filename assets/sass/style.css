@@ -18,26 +18,25 @@ body {
   box-shadow: 0 0 10px 1px #aaa;
 }
 .container header {
-  height: 650px;
-  background-image: url(../images/headerPhoto.jpg);
-  border-radius: 8px 8px 0 0;
-}
-.container header .headerBar {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: sticky;
+  top: 0;
 }
-.container header .headerBar .logoHomePage {
+.container header .logoHomePage {
   display: flex;
   margin: 5px 0 0 10px;
   transform: scale(0.7);
   perspective: 1000px;
   height: 80px;
 }
-.container header .headerBar .logoHomePage img {
+.container header .logoHomePage img {
   cursor: default;
   transition: 1s linear;
 }
-.container header .headerBar .logoHomePage h1 {
+.container header .logoHomePage h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: "Operator Mono", sans-serif;
@@ -46,17 +45,17 @@ body {
   cursor: default;
   transition: 1s linear;
 }
-.container header .headerBar .logoHomePage:hover img {
+.container header .logoHomePage:hover img {
   transform: rotateY(1080deg);
 }
-.container header .headerBar .logoHomePage:hover h1 {
+.container header .logoHomePage:hover h1 {
   transform: rotateX(1080deg);
 }
-.container header .headerBar nav {
+.container header nav {
   display: flex;
   margin-top: 5px;
 }
-.container header .headerBar nav a {
+.container header nav a {
   position: relative;
   color: #666;
   font-size: 20px;
@@ -66,10 +65,10 @@ body {
   margin: auto 50px auto 0;
   transition: 0.2s linear;
 }
-.container header .headerBar nav a:last-child {
+.container header nav a:last-child {
   margin-right: 200px;
 }
-.container header .headerBar nav a::before {
+.container header nav a::before {
   position: absolute;
   content: "";
   bottom: -3px;
@@ -81,12 +80,16 @@ body {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.container header .headerBar nav a:hover {
+.container header nav a:hover {
   color: #222;
 }
-.container header .headerBar nav a:hover::before {
+.container header nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+.container .headerPhoto {
+  height: 650px;
+  background-image: url(../images/headerPhoto.jpg);
 }
 .container .products {
   display: flex;
