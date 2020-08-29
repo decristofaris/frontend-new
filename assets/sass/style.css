@@ -14,23 +14,24 @@ body {
   height: 2000px;
   margin: 20px auto 20px auto;
   background-color: #fceff5;
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0 0 10px 1px #aaa;
 }
 .container header {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
   position: sticky;
   top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 5px #f7dbe8;
+  background-color: rgba(252, 239, 245, 0.9);
 }
 .container header .logoHomePage {
   display: flex;
   margin: 5px 0 0 10px;
   transform: scale(0.7);
   perspective: 1000px;
-  height: 80px;
+  height: 75px;
 }
 .container header .logoHomePage img {
   cursor: default;
@@ -88,6 +89,9 @@ body {
   transform: scaleX(1);
 }
 .container .headerPhoto {
+  position: relative;
+  top: -85px;
+  left: 0;
   height: 650px;
   background-image: url(../images/headerPhoto.jpg);
 }
