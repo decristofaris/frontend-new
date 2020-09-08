@@ -55,8 +55,6 @@ body {
 .container header nav {
   display: flex;
   margin-top: 5px;
-  flex-wrap: wrap;
-  background-size: cover;
 }
 .container header nav a {
   position: relative;
@@ -90,18 +88,32 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-.container .headerPhoto {
+.container .homePagePhoto {
   position: relative;
   top: -85px;
   left: 0;
-  height: 650px;
+  height: 800px;
   background-image: url(../images/headerPhoto.jpg);
+}
+.container .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 100%;
+}
+.container .gallery .galleryPhoto {
+  height: 350px;
+  width: 25%;
+  background-color: #b9b9b9;
+  border: solid 1px #222;
+  border-style: none;
 }
 .container .products {
   display: flex;
   justify-content: space-evenly;
   width: 1400px;
   margin-top: 50px;
+  visibility: hidden;
 }
 .container .products div {
   width: 400px;

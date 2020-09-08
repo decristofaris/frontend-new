@@ -145,15 +145,44 @@
 
 
      //----------> CONTAINER : HEADER PHOTO <----------//
-     .headerPhoto {
+     .homePagePhoto {
 
           position: relative;
           top: -85px;
           left: 0;
-          height: 650px;
+          height: 800px;
           background-image: url(../images/headerPhoto.jpg);
 
      }
+
+
+     //----------> CONTAINER : GALLERY <----------//
+     .gallery {
+
+          display: flex;
+          flex-wrap: wrap;
+          height: 600px;
+          width: 100%;
+
+
+
+          .galleryPhoto {
+
+               height: 350px;
+               width: 25%;
+               background-color: rgb(185, 185, 185);
+               border: solid 1px #222;
+               border-style: none;
+
+          }
+
+
+     }
+
+
+
+
+
 
 
      //----------> CONTAINER : PRODUCTS <----------//
@@ -163,6 +192,7 @@
           justify-content: space-evenly;
           width: 1400px;
           margin-top: 50px;
+          visibility: hidden;
 
 
           //----------> PRODUCTS : DIV <----------//
