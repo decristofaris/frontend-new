@@ -7,7 +7,7 @@
 
      width: 1400px;
      height: 2000px;
-     margin: 20px auto 20px auto;
+     margin: 20px auto;
      background-color: #fceff5;
      border-radius: 2px;
      box-shadow: 0 0 10px 1px #aaa;
@@ -165,7 +165,7 @@
           width: 100%;
 
 
-
+          //----------> GALLERY : PHOTO <----------//
           .galleryPhoto {
 
                height: 350px;
@@ -176,13 +176,7 @@
 
           }
 
-
-     }
-
-
-
-
-
+     } // END/ .gallery <-----//
 
 
      //----------> CONTAINER : PRODUCTS <----------//
@@ -216,7 +210,7 @@
                     background-color: rgba($color: #fceff5, $alpha: 0.9);
                     visibility: hidden;
                     transform: scale(0);
-                    transition: .3s linear;
+                    transition: $transition;
 
 
                     //----------> P : SPAN <----------//
@@ -258,7 +252,7 @@
 
                     background-image: url(../images/wineRed.jpg);
                     opacity: 80%;
-                    transition: .3S linear;
+                    transition: $transition;
 
 
                     //----------> DIV:NTH-CHILD(1) : HOVER <----------//
@@ -276,7 +270,7 @@
 
                     background-image: url(../images/wineRose.jpg);
                     opacity: 80%;
-                    transition: .3S linear;
+                    transition: $transition;
 
 
                     //----------> DIV:NTH-CHILD(2) : HOVER <----------//
@@ -294,7 +288,7 @@
 
                     background-image: url(../images/wineWhite.jpg);
                     opacity: 80%;
-                    transition: .3S linear;
+                    transition: $transition;
 
 
                     //----------> DIV:NTH-CHILD(3) : HOVER <----------//
