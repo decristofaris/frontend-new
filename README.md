@@ -1,1 +1,1 @@
-# frontend update 7.0
+# frontend update 7.1

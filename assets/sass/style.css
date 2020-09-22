@@ -12,33 +12,33 @@ body {
 .container {
   width: 1400px;
   height: 5000px;
-  margin: 20px auto;
   background-color: #fceff5;
+  margin: 20px auto;
   border-radius: 2px;
   box-shadow: 0 0 10px 1px #aaa;
 }
 .container header {
+  display: flex;
+  justify-content: space-between;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: solid 5px #f7dbe8;
   background-color: rgba(252, 239, 245, 0.9);
+  border-bottom: solid 5px #f7dbe8;
 }
-.container header .logoHomePage {
+.container header .logoHome {
   display: flex;
+  height: 75px;
   margin: 5px 0 0 10px;
   transform: scale(0.7);
   perspective: 1000px;
-  height: 75px;
 }
-.container header .logoHomePage img {
+.container header .logoHome img {
   cursor: default;
   transition: 1s linear;
 }
-.container header .logoHomePage h1 {
+.container header .logoHome h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: "Operator Mono", sans-serif;
@@ -47,10 +47,10 @@ body {
   cursor: default;
   transition: 1s linear;
 }
-.container header .logoHomePage:hover img {
+.container header .logoHome:hover img {
   transform: rotateY(1080deg);
 }
-.container header .logoHomePage:hover h1 {
+.container header .logoHome:hover h1 {
   transform: rotateX(1080deg);
 }
 .container header nav {
@@ -89,7 +89,7 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-.container .homePagePhoto {
+.container .homePhoto {
   position: relative;
   top: -85px;
   left: 0;
@@ -161,23 +161,17 @@ body {
   opacity: 80%;
   transition: 0.3s linear;
 }
-.container .products div:nth-child(1):nth-child(1):hover {
-  opacity: 100%;
-}
 .container .products div:nth-child(2) {
   background-image: url(../images/wineRose.jpg);
   opacity: 80%;
   transition: 0.3s linear;
-}
-.container .products div:nth-child(2):nth-child(2):hover {
-  opacity: 100%;
 }
 .container .products div:nth-child(3) {
   background-image: url(../images/wineWhite.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
-.container .products div:nth-child(3):nth-child(3):hover {
+.container .products div:nth-child(1):hover, .container .products div:nth-child(2):hover, .container .products div:nth-child(3):hover {
   opacity: 100%;
 }
 .container .aboutUs {
