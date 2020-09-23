@@ -11,7 +11,8 @@ body {
 
 .container {
   width: 1400px;
-  height: 5000px;
+  height: -webkit-max-content;
+  height: max-content;
   background-color: #fceff5;
   margin: 20px auto;
   border-radius: 2px;
@@ -110,13 +111,12 @@ body {
   width: 340px;
   margin: 4px;
   background-color: #b9b9b9;
-  border: solid 2px #fceff5;
-  border-radius: 2px;
   transition: 0.3s linear;
 }
 .container .gallery .galleryPhoto:hover {
   transform: scale(1.06);
-  border-color: #646464;
+  border: solid 2px #646464;
+  border-radius: 2px;
 }
 .container .products {
   display: flex;
@@ -178,24 +178,22 @@ body {
 }
 .container .aboutUs {
   width: 100%;
-  height: 450px;
-  margin-top: 150px;
+  height: 500px;
+  margin-top: 100px;
   background-color: #f76b6b;
 }
 .container .aboutUs .block {
   width: 100%;
   height: 100%;
-  padding: 30px 650px 20px 20px;
-  -webkit-clip-path: polygon(0 0, 60% 0, 100% 0, 100% 50px, 59% 50px, 40% 100%, 0% 100%);
-          clip-path: polygon(0 0, 60% 0, 100% 0, 100% 50px, 59% 50px, 40% 100%, 0% 100%);
+  padding: 30px 900px 20px 20px;
+  -webkit-clip-path: polygon(0 0, 40% 0px, 40% 100%, 0% 100%);
+          clip-path: polygon(0 0, 40% 0px, 40% 100%, 0% 100%);
   background-color: #ff9898;
-  transform: translateY(-50px);
   transition: 0.5s linear;
 }
 .container .aboutUs:hover .block {
-  -webkit-clip-path: polygon(0 0, 60% 0, 100% 0, 100% 100%, 59% 100%, 40% 100%, 0% 100%);
-          clip-path: polygon(0 0, 60% 0, 100% 0, 100% 100%, 59% 100%, 40% 100%, 0% 100%);
-  transform: translateY(0);
+  -webkit-clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
 }
 .container .aboutUs .moreInfo {
   display: inline-block;
@@ -212,4 +210,10 @@ body {
   border-color: red;
   color: red;
   background-color: #fff;
+}
+.container .socialBar {
+  width: 100%;
+  height: 60px;
+  margin-top: 80px;
+  background-color: #333;
 }
