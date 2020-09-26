@@ -1,0 +1,451 @@
+
+//---------------> HOME PAGE <---------------//
+//---------------> HOME PAGE <---------------//
+
+
+//----------> CONTAINER <----------//
+.container {
+
+     width: 1400px;
+     height: max-content;
+     background-color: #fceff5;
+     margin: 20px auto;
+     border-radius: 2px;
+     box-shadow: 0 0 10px 1px #aaa;
+
+
+     //----------> CONTAINER : HEADER <----------//
+     header {
+
+          display: flex;
+          justify-content: space-between;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          background-color: rgba($color: #fceff5, $alpha: 0.9);
+          border-bottom: solid 5px #f7dbe8;
+
+
+          //----------> HEADER : LOGO HOME <----------//
+          .logoHome {
+          
+               display: flex;
+               height: 75px;
+               margin: 5px 0 0 10px;
+               transform: scale(0.7);
+               perspective: 1000px;
+                    
+               
+               //----------> LOGO HOME : IMG <----------//
+               img {
+
+                    cursor: default;
+                    transition: 1s linear;
+
+               }
+
+
+               //----------> LOGO HOME : H1 <----------//
+               h1 {
+               
+                    font-size: 40px;
+                    font-weight: 400;
+                    font-family: "Operator Mono", sans-serif;
+                    font-style: italic;
+                    margin: auto 0;
+                    cursor: default;
+                    transition: 1s linear;
+                         
+               }
+
+
+               //----------> LOGO HOME : HOVER > IMG <----------//
+               &:hover img {
+
+                    transform: rotateY(1080deg);
+
+               }
+
+
+               //----------> LOGO HOME : HOVER > H1 <----------//
+               &:hover h1 {
+
+                    transform: rotateX(1080deg);
+
+               }
+          
+          } // END/ .logoHomePage <-----//
+
+
+          //----------> HEADER : NAV <----------//
+          nav {
+
+               display: flex;
+               margin-top: 5px;
+
+
+               //----------> NAV : A <----------//
+               a {
+
+                    position: relative;
+                    color: #666;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-style: italic;
+                    text-decoration: none;
+                    margin: auto 70px auto 0;
+                    transition: .2s linear;
+
+
+                    //----------> A : LAST-CHILD <----------//
+                    &:last-child {
+
+                         margin-right: 150px;
+
+                    }
+
+
+                    //----------> A : BEFORE <----------//
+                    &::before {
+
+                         position: absolute;
+                         content: '';
+                         bottom: -3px;
+                         left: 0;
+                         height: 2px;
+                         width: 100%;
+                         background-color: #222;
+                         visibility: hidden;
+                         transform: scaleX(0);
+                         transition: all 0.3s ease-in-out 0s;
+
+                    }
+
+
+                    //----------> A : HOVER <----------//
+                    &:hover {
+
+                         color: #222;
+                         transform: scale(1.1);
+
+                    }
+
+
+                    //----------> A : HOVER::BEFORE <----------//
+                    &:hover::before {
+
+                         visibility: visible;
+                         transform: scaleX(1);
+
+                    }
+
+               } // END/ a <-----//
+
+          } // END/ nav <-----//
+
+     } // END/ header <-----//
+
+
+     //----------> CONTAINER : HOME PHOTO <----------//
+     .homePhoto {
+
+          position: relative;
+          top: -85px;
+          left: 0;
+          height: 800px;
+          //background-image: url(#);
+          background-color: rgb(243, 147, 147);
+
+     }
+
+
+     //----------> CONTAINER : GALLERY <----------//
+     .gallery {
+
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          height: 680px;
+          width: 100%;
+
+
+          //----------> GALLERY : GALLERY PHOTO <----------//
+          .galleryPhoto {
+
+               height: 340px;
+               width: 340px;
+               margin: 4px;
+               background-color: rgb(185, 185, 185);
+               transition: .3s linear;
+
+
+               //----------> GALLERY PHOTO : HOVER <----------//
+               &:hover {
+
+                    transform: scale(1.06);
+                    border: solid 2px #646464;
+                    border-radius: 2px;
+               }
+
+
+               &:nth-child(1) {
+
+                    //background-image: url(#);
+                    background-color: red;
+
+               }
+
+
+               &:nth-child(2) {
+
+                    //background-image: url(#);
+                    background-color: khaki;
+
+               }
+
+
+               &:nth-child(3) {
+
+                    //background-image: url(#);
+                    background-color: salmon;
+
+               }
+
+
+               &:nth-child(4) {
+
+                    //background-image: url(#);
+                    background-color: fuchsia;
+
+               }
+
+
+               &:nth-child(5) {
+
+                    //background-image: url(#);
+                    background-color: darkmagenta;
+
+               }
+
+
+               &:nth-child(6) {
+
+                    //background-image: url(#);
+                    background-color: goldenrod;
+
+               }
+
+
+               &:nth-child(7) {
+
+                    //background-image: url(#);
+                    background-color: blue;
+
+               }
+
+
+               &:nth-child(8) {
+
+                    //background-image: url(#);
+                    background-color: green;
+
+               }
+
+          } // END/ .galleryPhoto <-----//
+
+     } // END/ .gallery <-----//
+
+
+     .blockInvisible {
+
+          position: absolute;
+          top: 1605px;
+          left: auto;
+          z-index: 2;
+          width: 1400px;
+          height: 115px;
+          background-color: #fceff5;
+
+     }
+
+
+     //----------> CONTAINER : PRODUCTS <----------//
+     .products {
+
+          display: flex;
+          justify-content: space-evenly;
+          width: 1400px;
+          margin-top: 150px;
+
+
+          //----------> PRODUCTS : DIV <----------//
+          div {
+
+               width: 400px;
+               height: 800px;
+               border: solid 5px #f7dbe8;
+               transition: transform .5s linear;
+
+      
+               //----------> DIV : P <----------//
+               p {
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    color: #222;
+                    font-size: 14px;
+                    font-weight: 200;
+                    font-family: 'Oswald', sans-serif;
+                    padding: 0 30px 10px 30px;
+                    cursor: default;
+                    background-color: rgba($color: #fceff5, $alpha: 0.9);
+                    visibility: hidden;
+                    transform: translateY(-100px);
+                    transition: $transition;
+
+
+                    //----------> P : SPAN <----------//
+                    & span {
+
+                         display: block;
+                         color: #222;
+                         font-size: 25px;
+                         font-weight: 300;
+                         padding-top: 10px;
+                         text-align: center;
+     
+                    }
+
+
+               } // END/ p <-----//
+
+
+               //----------> DIV : HOVER <----------//
+               &:hover {
+
+                    transform: scale(1.03);
+
+               }
+
+
+               //----------> DIV : HOVER > P <----------//
+               &:hover p {
+
+                    transform: scale(1);
+                    visibility: visible;
+                    border-bottom: solid 3px #f7dbe8;
+
+               }
+
+
+               //----------> DIV:NTH-CHILD(1) <----------//
+               &:nth-child(1) {
+
+                    background-image: url(../images/wineRed.jpg);
+                    opacity: 80%;
+                    transition: $transition;
+
+               }
+
+
+               //----------> DIV:NTH-CHILD(2) <----------//
+               &:nth-child(2) {
+
+                    background-image: url(../images/wineRose.jpg);
+                    opacity: 80%;
+                    transition: $transition;
+
+               }
+
+
+               //----------> DIV:NTH-CHILD(3) <----------//
+               &:nth-child(3) {
+
+                    background-image: url(../images/wineWhite.jpg);
+                    opacity: 80%;
+                    transition: $transition;
+
+               }
+
+
+               //----------> DIV:NTH-CHILD(1, 2, 3) : HOVER <----------//
+               &:nth-child(1):hover,
+               &:nth-child(2):hover,
+               &:nth-child(3):hover {
+
+                    opacity: 100%;
+
+               }
+          
+          } // END/ div <-----//
+
+     } // END/ .products <-----//
+
+
+     //----------> CONTAINER : PRODUCTS <----------//
+     .aboutUs {
+
+          width: 100%;
+          height: 500px;
+          margin-top: 100px;
+          background-color: #f76b6b;
+
+
+          .block {
+
+               width: 100%;
+               height: 100%;
+               padding: 30px 900px 30px 30px;
+               clip-path: polygon(0 0,40% 0px, 40% 100%, 0% 100%);
+               background-color: #ff9898;
+               transition: .5s linear;
+
+          }
+
+
+          &:hover .block {
+
+               clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
+
+          }
+
+
+          .moreInfo {
+
+               display: inline-block;
+               font-size: 30px;
+               border: solid 2px #333;
+               border-radius: 3px;
+               background-color: #f76b6b;
+               padding: 6px 20px;
+               transform: translateX(800px);
+               cursor: pointer;
+               transition: .3s linear;
+
+
+               &:hover {
+
+                    border-color: red;
+                    color: red;
+                    background-color: #fff;
+
+               }
+
+          } // END/ .moreInfo <-----//
+
+     } // END/ .aboutUs <-----//
+
+
+     .socialBar {
+
+          width: 100%;
+          height: 60px;
+          margin-top: 80px;
+          background-color: #333;
+
+     }
+
+
+} // END/ .container <-----//
