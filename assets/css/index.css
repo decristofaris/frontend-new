@@ -141,15 +141,6 @@ body {
 .container .gallery .galleryPhoto:nth-child(8) {
   background-color: green;
 }
-.container .blockInvisible {
-  position: absolute;
-  top: 1605px;
-  left: auto;
-  z-index: 2;
-  width: 1400px;
-  height: 115px;
-  background-color: #fceff5;
-}
 .container .products {
   display: flex;
   justify-content: space-evenly;
@@ -195,17 +186,17 @@ body {
   border-bottom: solid 3px #f7dbe8;
 }
 .container .products div:nth-child(1) {
-  background-image: url(../images/wineRed.jpg);
+  background-image: url(../images/index/wineRed.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
 .container .products div:nth-child(2) {
-  background-image: url(../images/wineRose.jpg);
+  background-image: url(../images/index/wineRose.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
 .container .products div:nth-child(3) {
-  background-image: url(../images/wineWhite.jpg);
+  background-image: url(../images/index/wineWhite.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
@@ -251,5 +242,11 @@ body {
   width: 100%;
   height: 60px;
   margin-top: 80px;
-  background-color: #333;
+  background-color: #999;
+}
+.container .socialBar .socialIcon {
+  text-decoration: none;
+}
+.container .socialBar .socialIcon img {
+  width: 50px;
 }
