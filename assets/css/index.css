@@ -42,7 +42,7 @@ body {
 .container header .logoHome h1 {
   font-size: 40px;
   font-weight: 400;
-  font-family: "Operator Mono", sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: italic;
   margin: auto 0;
   cursor: default;
@@ -239,14 +239,52 @@ body {
   background-color: #fff;
 }
 .container .socialBar {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.container .socialBar a {
+  display: flex;
+  background-color: #fceff5;
   height: 60px;
-  margin-top: 80px;
-  background-color: #999;
-}
-.container .socialBar .socialIcon {
+  width: 60px;
+  margin: auto 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
 }
-.container .socialBar .socialIcon img {
-  width: 50px;
+.container .socialBar a i {
+  font-size: 35px;
+  color: #777;
+  transition: transform 0.5s;
+}
+.container .socialBar a:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+}
+.container .socialBar a:hover i {
+  transform: scale(0.95);
+}
+.container .socialBar a:hover .fa-facebook {
+  color: #3b5998;
+}
+.container .socialBar a:hover .fa-instagram {
+  color: #dc2e76;
+}
+.container .socialBar a:hover .fa-whatsapp {
+  color: #4fce5d;
+}
+.container .socialBar a:hover .fa-telegram {
+  color: #68c1ee;
+}
+.container .socialBar a:hover .fa-pinterest {
+  color: #e60019;
+}
+.container .socialBar a:hover .fa-twitter {
+  color: #00acee;
 }
