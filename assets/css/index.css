@@ -38,9 +38,9 @@ body {
 .container header .logoHome img {
   cursor: default;
   height: 140px;
+  transform: translate(0, -25px);
   transition: 2s linear;
   perspective: 1000px;
-  transform: translate(0, -25px);
 }
 .container header nav {
   display: flex;
@@ -64,8 +64,8 @@ body {
   content: "";
   bottom: -3px;
   left: 0;
-  height: 2px;
   width: 100%;
+  height: 2px;
   background-color: #222;
   visibility: hidden;
   transform: scaleX(0);
@@ -90,20 +90,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 680px;
   width: 100%;
+  height: 680px;
 }
 .container .gallery .galleryPhoto {
-  height: 340px;
   width: 340px;
-  margin: 4px;
+  height: 340px;
   background-color: #b9b9b9;
+  margin: 4px;
   transition: 0.3s linear;
 }
 .container .gallery .galleryPhoto:hover {
-  transform: scale(1.06);
   border: solid 2px #646464;
   border-radius: 2px;
+  transform: scale(1.06);
 }
 .container .gallery .galleryPhoto:nth-child(1) {
   background-color: red;
@@ -142,23 +142,23 @@ body {
   transition: transform 0.5s linear;
 }
 .container .products div p {
+  cursor: default;
   color: transparent;
   font-size: 14px;
   font-weight: 200;
   font-family: "Montserrat", sans-serif;
-  padding: 0 30px 10px 30px;
-  cursor: default;
   background-color: rgba(252, 239, 245, 0);
-  transition: 0.3s linear;
+  padding: 0 30px 10px 30px;
   border-bottom: solid 3px transparent;
+  transition: 0.3s linear;
 }
 .container .products div p span {
   display: block;
   color: transparent;
   font-size: 25px;
   font-weight: 300;
-  padding-top: 10px;
   text-align: center;
+  padding-top: 10px;
 }
 .container .products div:hover {
   transform: scale(1.03);
@@ -192,16 +192,16 @@ body {
 .container .aboutUs {
   width: 100%;
   height: 500px;
-  margin-top: 100px;
   background-color: #f76b6b;
+  margin-top: 100px;
 }
 .container .aboutUs .block {
   width: 100%;
   height: 100%;
+  background-color: #ff9898;
   padding: 30px 900px 30px 30px;
   -webkit-clip-path: polygon(0 0, 40% 0px, 40% 100%, 0% 100%);
           clip-path: polygon(0 0, 40% 0px, 40% 100%, 0% 100%);
-  background-color: #ff9898;
   transition: 0.5s linear;
 }
 .container .aboutUs:hover .block {
@@ -209,20 +209,20 @@ body {
           clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
 }
 .container .aboutUs .moreInfo {
+  cursor: pointer;
   display: inline-block;
   font-size: 30px;
+  background-color: #f76b6b;
   border: solid 2px #333;
   border-radius: 3px;
-  background-color: #f76b6b;
   padding: 6px 20px;
   transform: translateX(800px);
-  cursor: pointer;
   transition: 0.3s linear;
 }
 .container .aboutUs .moreInfo:hover {
-  border-color: red;
   color: red;
   background-color: #fff;
+  border-color: red;
 }
 .container .socialBar {
   display: flex;
@@ -231,26 +231,26 @@ body {
 }
 .container .socialBar a {
   display: flex;
-  background-color: #fceff5;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 60px;
-  margin: auto 15px;
-  border-radius: 8px;
-  align-items: center;
-  justify-content: center;
   text-decoration: none;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  background-color: #fceff5;
+  margin: auto 15px;
   border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
   transition: transform 0.5s;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 .container .socialBar a i {
   font-size: 35px;
   transition: transform 0.5s;
 }
 .container .socialBar a:hover {
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.01);
   transform: translateY(2px);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 .container .socialBar a:hover i {
   transform: scale(0.95);
