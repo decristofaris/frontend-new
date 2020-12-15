@@ -30,49 +30,26 @@
           .logoHome {
           
                display: flex;
-               height: 75px;
-               margin: 5px 0 0 10px;
-               transform: scale(0.7);
-               perspective: 1000px;
-                    
+               justify-content: space-between;
+               width: 100px;
+               height: 55px;
+               margin: 25px 0 0 30px;
+     
                
                //----------> LOGO HOME : IMG <----------//
                img {
 
                     cursor: default;
-                    transition: 1s linear;
-
+                    height: 140px;
+                    transition: 2s linear;
+                    perspective: 1000px;
+                    transform: translate(-20px, -25px);
+                    
                }
 
 
-               //----------> LOGO HOME : H1 <----------//
-               h1 {
                
-                    font-size: 40px;
-                    font-weight: 400;
-                    font-family: "Arial", sans-serif;
-                    font-style: italic;
-                    margin: auto 0;
-                    cursor: default;
-                    transition: 1s linear;
-                         
-               }
 
-
-               //----------> LOGO HOME : HOVER > IMG <----------//
-               &:hover img {
-
-                    transform: rotateY(1080deg);
-
-               }
-
-
-               //----------> LOGO HOME : HOVER > H1 <----------//
-               &:hover h1 {
-
-                    transform: rotateX(1080deg);
-
-               }
           
           } // END/ .logoHomePage <-----//
 
@@ -277,27 +254,22 @@
                //----------> DIV : P <----------//
                p {
 
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 1;
-                    color: #222;
+                    color: transparent;
                     font-size: 14px;
                     font-weight: 200;
-                    font-family: 'Oswald', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                     padding: 0 30px 10px 30px;
                     cursor: default;
-                    background-color: rgba($color: #fceff5, $alpha: 0.9);
-                    visibility: hidden;
-                    transform: translateY(-100px);
+                    background-color: rgba($color: #fceff5, $alpha: 0);
                     transition: $transition;
+                    border-bottom: solid 3px transparent;
 
 
                     //----------> P : SPAN <----------//
                     & span {
 
                          display: block;
-                         color: #222;
+                         color: transparent;
                          font-size: 25px;
                          font-weight: 300;
                          padding-top: 10px;
@@ -320,9 +292,16 @@
                //----------> DIV : HOVER > P <----------//
                &:hover p {
 
-                    transform: scale(1);
-                    visibility: visible;
+                    color: #333;
+                    background-color: rgba($color: #fceff5, $alpha: 0.9);
                     border-bottom: solid 3px #f7dbe8;
+
+               }
+
+               //----------> DIV : HOVER > SPAN <----------//
+               &:hover span {
+
+                    color: #333;
 
                }
 
@@ -371,7 +350,7 @@
      } // END/ .products <-----//
 
 
-     //----------> CONTAINER : PRODUCTS <----------//
+     //----------> CONTAINER : ABOUT US <----------//
      .aboutUs {
 
           width: 100%;
@@ -450,7 +429,6 @@
                i {
 
                     font-size: 35px;
-                    color: #777;
                     transition: transform 0.5s;
 
                }
@@ -474,37 +452,37 @@
                     
                }
 
-               &:hover .fa-facebook {
+               & .fa-facebook {
 
                     color: #3b5998;
 
                }
 
-               &:hover .fa-instagram {
+               & .fa-instagram {
 
                     color:#dc2e76;
 
                }
 
-               &:hover .fa-whatsapp {
+               & .fa-whatsapp {
 
                     color: #4fce5d;
 
                }
 
-               &:hover .fa-telegram {
+               & .fa-telegram {
 
                     color: #68c1ee;
 
                }
 
-               &:hover .fa-pinterest {
+               & .fa-pinterest {
 
                     color: #e60019;
 
                }
 
-               &:hover .fa-twitter {
+               & .fa-twitter {
 
                     color: #00acee;
 

@@ -30,29 +30,17 @@ body {
 }
 .container header .logoHome {
   display: flex;
-  height: 75px;
-  margin: 5px 0 0 10px;
-  transform: scale(0.7);
-  perspective: 1000px;
+  justify-content: space-between;
+  width: 100px;
+  height: 55px;
+  margin: 25px 0 0 30px;
 }
 .container header .logoHome img {
   cursor: default;
-  transition: 1s linear;
-}
-.container header .logoHome h1 {
-  font-size: 40px;
-  font-weight: 400;
-  font-family: "Arial", sans-serif;
-  font-style: italic;
-  margin: auto 0;
-  cursor: default;
-  transition: 1s linear;
-}
-.container header .logoHome:hover img {
-  transform: rotateY(1080deg);
-}
-.container header .logoHome:hover h1 {
-  transform: rotateX(1080deg);
+  height: 140px;
+  transition: 2s linear;
+  perspective: 1000px;
+  transform: translate(-20px, -25px);
 }
 .container header nav {
   display: flex;
@@ -154,24 +142,19 @@ body {
   transition: transform 0.5s linear;
 }
 .container .products div p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  color: #222;
+  color: transparent;
   font-size: 14px;
   font-weight: 200;
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 30px 10px 30px;
   cursor: default;
-  background-color: rgba(252, 239, 245, 0.9);
-  visibility: hidden;
-  transform: translateY(-100px);
+  background-color: rgba(252, 239, 245, 0);
   transition: 0.3s linear;
+  border-bottom: solid 3px transparent;
 }
 .container .products div p span {
   display: block;
-  color: #222;
+  color: transparent;
   font-size: 25px;
   font-weight: 300;
   padding-top: 10px;
@@ -181,9 +164,12 @@ body {
   transform: scale(1.03);
 }
 .container .products div:hover p {
-  transform: scale(1);
-  visibility: visible;
+  color: #333;
+  background-color: rgba(252, 239, 245, 0.9);
   border-bottom: solid 3px #f7dbe8;
+}
+.container .products div:hover span {
+  color: #333;
 }
 .container .products div:nth-child(1) {
   background-image: url(../images/index/wineRed.jpg);
@@ -259,7 +245,6 @@ body {
 }
 .container .socialBar a i {
   font-size: 35px;
-  color: #777;
   transition: transform 0.5s;
 }
 .container .socialBar a:hover {
@@ -270,21 +255,21 @@ body {
 .container .socialBar a:hover i {
   transform: scale(0.95);
 }
-.container .socialBar a:hover .fa-facebook {
+.container .socialBar a .fa-facebook {
   color: #3b5998;
 }
-.container .socialBar a:hover .fa-instagram {
+.container .socialBar a .fa-instagram {
   color: #dc2e76;
 }
-.container .socialBar a:hover .fa-whatsapp {
+.container .socialBar a .fa-whatsapp {
   color: #4fce5d;
 }
-.container .socialBar a:hover .fa-telegram {
+.container .socialBar a .fa-telegram {
   color: #68c1ee;
 }
-.container .socialBar a:hover .fa-pinterest {
+.container .socialBar a .fa-pinterest {
   color: #e60019;
 }
-.container .socialBar a:hover .fa-twitter {
+.container .socialBar a .fa-twitter {
   color: #00acee;
 }
