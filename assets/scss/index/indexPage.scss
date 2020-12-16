@@ -194,7 +194,7 @@
           display: flex;
           justify-content: space-evenly;
           width: 1400px;
-          margin-top: 150px;
+          margin-top: 100px;
 
           //----------> PRODUCTS : DIV <----------//
           div {
@@ -289,46 +289,35 @@
      //----------> CONTAINER : ABOUT US <----------//
      .aboutUs {
 
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           height: 500px;
-          background-color: #f76b6b;
-          margin-top: 100px;
-
-          .block {
-
-               width: 100%;
-               height: 100%;
-               background-color: #ff9898;
-               padding: 30px 900px 30px 30px;
-               clip-path: polygon(0 0,40% 0px, 40% 100%, 0% 100%);
-               transition: .5s linear;
-          }
-
-          &:hover .block {
-
-               clip-path: polygon(0 0, 90% 0, 90% 100%, 0% 100%);
-          }
-
-          .moreInfo {
+          background-image: url(/assets/images/index/aboutUsBack.jpg);
+          margin-top: 90px;   
+          border-bottom: solid 5px #f7dbe8;
+          border-top: solid 5px #f7dbe8;
+          
+          .linkButton {
 
                cursor: pointer;
-               display: inline-block;
-               font-size: 30px;
-               background-color: #f76b6b;
-               border: solid 2px #333;
-               border-radius: 3px;
-               padding: 6px 20px;
-               transform: translateX(800px);
-               transition: .3s linear;
+               display: inline;
+               color: rgba(#fff, 0);
+               background-color: rgba(#fff, .0);
+               font-size: 70px;
+               border: solid 2px rgba(#fff, .0);
+               padding: 40px 120px;
+               transition: .6s linear;
+          }
 
-               &:hover {
+          &:hover .linkButton {
 
-                    color: red;
-                    background-color: #fff;
-                    border-color: red;
-               }
-
-          } // END/ .moreInfo <-----//
+               color: rgba(#fff, 1);
+               background-color: rgba(#fff, .1);
+               padding: 167px 482px;
+               border: solid 2px rgba(#fff, 1);
+          }
 
      } // END/ .aboutUs <-----//
 
@@ -337,7 +326,7 @@
 
           display: flex;
           justify-content: center;
-          height: 100px;
+          height: 130px;
           border-bottom: solid 5px #f7dbe8;
 
           a {
@@ -441,7 +430,7 @@
                }
           }
 
-          .otherLink {
+          .otherLinks {
 
                width: 30%;
                height: 80%;
