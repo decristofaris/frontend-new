@@ -10,10 +10,27 @@ body {
 }
 
 .container {
-  width: 1400px;
-  height: 800px;
+  width: 1680px;
+  height: -webkit-max-content;
+  height: max-content;
   background-color: #fceff5;
   margin: 20px auto;
   border-radius: 2px;
   box-shadow: 0 0 10px 1px #aaa;
+}
+.container .photo {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 200px 200px 400px 400px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
+  column-gap: 13px;
+  row-gap: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.container .photo .blockTypeA {
+  background-color: red;
+}
+.container .photo .blockTypeB {
+  background-color: blue;
 }
