@@ -1,8 +1,8 @@
 
-//---------------> GALLERY <---------------//
-//---------------> GALLERY <---------------//
+//GALLERY = PAGE//
 
-//----------> CONTAINER <----------//
+
+//CONTAINER//
 .container {
 
      width: 1680px;
@@ -12,6 +12,7 @@
      border-radius: 2px;
      box-shadow: 0 0 10px 1px #aaa;
 
+     //CONTAINER : PHOTO//
      .photo {
 
           display: grid;
@@ -23,16 +24,18 @@
           padding-top: 13px;
           padding-bottom: 13px;
 
+          //PHOTO : BLOCK TYPE A//
           .blockTypeA {
 
                background-color: red;
           }
 
+          //PHOTO : BLOCK TYPE B//
           .blockTypeB {
 
                background-color: blue;
           }
      
-     }
+     }//.photo
 
-}
+}//.container
