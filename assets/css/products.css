@@ -12,9 +12,216 @@ body {
 
 .container {
   width: 1400px;
-  height: 800px;
+  height: -webkit-max-content;
+  height: max-content;
   background-color: #fceff5;
   margin: 20px auto;
   border-radius: 2px;
   box-shadow: 0 0 10px 1px #aaa;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(252, 239, 245, 0.9);
+  border-bottom: solid 5px #f7dbe8;
+}
+.container header .logoHome {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  height: 55px;
+  margin: 25px 0 0 30px;
+}
+.container header .logoHome img {
+  height: 140px;
+  transform: translate(0, -25px);
+}
+.container header nav {
+  display: flex;
+  margin-top: 5px;
+}
+.container header nav a {
+  position: relative;
+  color: #666;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-decoration: none;
+  margin: auto 70px auto 0;
+  transition: transform 0.2s;
+}
+.container header nav a:hover {
+  color: #222;
+  transform: scale(1.1);
+}
+.container header nav a:last-child {
+  margin-right: 150px;
+}
+.container header nav a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #222;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.container header nav a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.container .products {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1400px;
+  margin: 80px 0 20px 0;
+}
+.container .products div {
+  width: 400px;
+  height: 800px;
+  border: solid 5px #f7dbe8;
+  transition: transform 0.5s linear;
+}
+.container .products div p {
+  cursor: default;
+  color: transparent;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(252, 239, 245, 0);
+  padding: 0 30px 10px 30px;
+  border-bottom: solid 3px transparent;
+  transition: 0.3s linear;
+}
+.container .products div p span {
+  display: block;
+  color: transparent;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 10px;
+}
+.container .products div:hover {
+  transform: scale(1.03);
+}
+.container .products div:hover p {
+  color: #333;
+  background-color: rgba(252, 239, 245, 0.9);
+  border-bottom: solid 3px #f7dbe8;
+}
+.container .products div:hover span {
+  color: #333;
+}
+.container .products div:nth-child(1) {
+  background-image: url(../images/index/wineRed.jpg);
+  opacity: 80%;
+  transition: 0.3s linear;
+}
+.container .products div:nth-child(2) {
+  background-image: url(../images/index/wineRose.jpg);
+  opacity: 80%;
+  transition: 0.3s linear;
+}
+.container .products div:nth-child(3) {
+  background-image: url(../images/index/wineWhite.jpg);
+  opacity: 80%;
+  transition: 0.3s linear;
+}
+.container .products div:nth-child(1):hover, .container .products div:nth-child(2):hover, .container .products div:nth-child(3):hover {
+  opacity: 100%;
+}
+.container .socialBar {
+  display: flex;
+  justify-content: center;
+  height: 130px;
+  border-bottom: solid 5px #f7dbe8;
+}
+.container .socialBar a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  text-decoration: none;
+  background-color: #fceff5;
+  margin: auto 15px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 8px;
+  transition: transform 0.5s;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.container .socialBar a i {
+  font-size: 35px;
+  transition: transform 0.5s;
+}
+.container .socialBar a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.container .socialBar a:hover i {
+  transform: scale(0.95);
+}
+.container .socialBar a .fa-facebook {
+  color: #3b5998;
+}
+.container .socialBar a .fa-instagram {
+  color: #dc2e76;
+}
+.container .socialBar a .fa-whatsapp {
+  color: #4fce5d;
+}
+.container .socialBar a .fa-telegram {
+  color: #68c1ee;
+}
+.container .socialBar a .fa-pinterest {
+  color: #e60019;
+}
+.container .socialBar a .fa-twitter {
+  color: #00acee;
+}
+.container footer {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #fceff5;
+}
+.container footer .copyright {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+.container footer .copyright img {
+  width: 70px;
+  margin-left: 10px;
+}
+.container footer .copyright p {
+  cursor: default;
+  display: inline;
+  margin-left: 20px;
+}
+.container footer .otherLinks {
+  width: 30%;
+  height: 80%;
+  margin: auto;
+}
+.container footer .otherLinks a {
+  display: block;
+  margin-bottom: 3px;
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+  transition: margin-left 0.2s;
+}
+.container footer .otherLinks a:hover {
+  color: blue;
+  margin-left: 20px;
 }
