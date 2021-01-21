@@ -11,13 +11,13 @@ body {
 }
 
 .container {
-  width: 1400px;
+  width: 1600px;
   height: -webkit-max-content;
   height: max-content;
-  background-color: #fceff5;
+  background-color: #fff;
   margin: 20px auto;
   border-radius: 2px;
-  box-shadow: 0 0 10px 1px #aaa;
+  box-shadow: 0 0 10px 3px #aaa;
 }
 .container header {
   display: flex;
@@ -75,6 +75,20 @@ body {
 .container header nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+.container .photo {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 250px 250px 250px 250px 250px;
+  column-gap: 22px;
+  row-gap: 22px;
+  padding-top: 62px;
+  padding-bottom: 22px;
+}
+.container .photo div {
+  background-color: #1b66a3;
+  border-radius: 2px;
 }
 .container .socialBar {
   display: flex;
@@ -159,9 +173,9 @@ body {
   color: #222;
   text-decoration: none;
   transition: color 0.2s;
-  transition: margin-left 0.2s;
+  transition: padding-left 0.2s;
 }
 .container footer .otherLinks a:hover {
   color: blue;
-  margin-left: 20px;
+  padding-left: 20px;
 }

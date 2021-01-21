@@ -12,15 +12,16 @@ body {
 
 .container {
   width: 1400px;
-  background-color: #fff;
+  height: -webkit-max-content;
+  height: max-content;
+  background-color: #fceff5;
   margin: 20px auto;
   border-radius: 2px;
-  box-shadow: 0 0 10px 3px #aaa;
+  box-shadow: 0 0 10px 1px #aaa;
 }
 .container header {
   display: flex;
   justify-content: space-between;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -50,7 +51,11 @@ body {
   font-style: italic;
   text-decoration: none;
   margin: auto 70px auto 0;
-  transition: 0.2s linear;
+  transition: transform 0.2s;
+}
+.container header nav a:hover {
+  color: #222;
+  transform: scale(1.1);
 }
 .container header nav a:last-child {
   margin-right: 150px;
@@ -67,69 +72,15 @@ body {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-.container header nav a:hover {
-  color: #222;
-  transform: scale(1.1);
-}
 .container header nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
-}
-.container .homePhoto {
-  position: relative;
-  top: -85px;
-  left: 0;
-  height: 800px;
-  background-color: #f39393;
-}
-.container .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  height: 680px;
-}
-.container .gallery .galleryPhoto {
-  width: 340px;
-  height: 340px;
-  background-color: #b9b9b9;
-  margin: 4px;
-  transition: 0.3s linear;
-}
-.container .gallery .galleryPhoto:hover {
-  border: solid 2px #646464;
-  border-radius: 2px;
-  transform: scale(1.06);
-}
-.container .gallery .galleryPhoto:nth-child(1) {
-  background-color: red;
-}
-.container .gallery .galleryPhoto:nth-child(2) {
-  background-color: khaki;
-}
-.container .gallery .galleryPhoto:nth-child(3) {
-  background-color: salmon;
-}
-.container .gallery .galleryPhoto:nth-child(4) {
-  background-color: fuchsia;
-}
-.container .gallery .galleryPhoto:nth-child(5) {
-  background-color: darkmagenta;
-}
-.container .gallery .galleryPhoto:nth-child(6) {
-  background-color: goldenrod;
-}
-.container .gallery .galleryPhoto:nth-child(7) {
-  background-color: blue;
-}
-.container .gallery .galleryPhoto:nth-child(8) {
-  background-color: green;
 }
 .container .products {
   display: flex;
   justify-content: space-evenly;
   width: 1400px;
-  margin-top: 100px;
+  margin: 80px 0 20px 0;
 }
 .container .products div {
   width: 400px;
@@ -168,49 +119,22 @@ body {
   color: #333;
 }
 .container .products div:nth-child(1) {
-  background-image: url(../images/index/wineRed.jpg);
+  background-image: url(../images/productsPage/wineRed.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
 .container .products div:nth-child(2) {
-  background-image: url(../images/index/wineRose.jpg);
+  background-image: url(../images/productsPage/wineRose.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
 .container .products div:nth-child(3) {
-  background-image: url(../images/index/wineWhite.jpg);
+  background-image: url(../images/productsPage/wineWhite.jpg);
   opacity: 80%;
   transition: 0.3s linear;
 }
 .container .products div:nth-child(1):hover, .container .products div:nth-child(2):hover, .container .products div:nth-child(3):hover {
   opacity: 100%;
-}
-.container .aboutUs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  background-image: url(/assets/images/index/aboutUsBack.jpg);
-  margin-top: 90px;
-  border-bottom: solid 5px #f7dbe8;
-  border-top: solid 5px #f7dbe8;
-}
-.container .aboutUs .linkButton {
-  cursor: pointer;
-  display: inline;
-  color: rgba(255, 255, 255, 0);
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 70px;
-  border: solid 2px rgba(255, 255, 255, 0);
-  padding: 40px 120px;
-  transition: 0.6s linear;
-}
-.container .aboutUs:hover .linkButton {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 167px 482px;
-  border: solid 2px white;
 }
 .container .socialBar {
   display: flex;
@@ -294,9 +218,10 @@ body {
   margin-bottom: 3px;
   color: #222;
   text-decoration: none;
-  transition: 0.2s linear;
+  transition: color 0.2s;
+  transition: padding-left 0.2s;
 }
 .container footer .otherLinks a:hover {
   color: blue;
-  margin-left: 20px;
+  padding-left: 20px;
 }

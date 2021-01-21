@@ -1,8 +1,256 @@
 
-//@IMPORT SCSS FILE//
+//ABOUT US = PAGE//
 
-@import "../variables.scss";
 
-@import "../lowPriority.scss";
+//CONTAINER//
+.container {
 
-@import "aboutUsPage.scss";
+     width: 1400px;
+     height: max-content;
+     background-color: #fceff5;
+     margin: 20px auto;
+     border-radius: 2px;
+     box-shadow: 0 0 10px 1px #aaa;
+
+     //CONTAINER : HEADER//
+     header {
+
+          display: flex;
+          justify-content: space-between;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+          background-color: rgba($color: #fceff5, $alpha: 0.9);
+          border-bottom: solid 5px #f7dbe8;
+
+          //HEADER : LOGO HOME//
+          .logoHome {
+          
+               display: flex;
+               justify-content: space-between;
+               width: 100px;
+               height: 55px;
+               margin: 25px 0 0 30px;
+               
+               //LOGO HOME : IMG//
+               img {
+
+                    height: 140px;
+                    transform: translate(0, -25px);
+               }
+
+          }//.logoHomePage
+
+          //HEADER : NAV//
+          nav {
+
+               display: flex;
+               margin-top: 5px;
+
+               //NAV : A//
+               a {
+
+                    position: relative;
+                    color: #666;
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-style: italic;
+                    text-decoration: none;
+                    margin: auto 70px auto 0;
+                    transition: transform .2s;
+
+                    //A:HOVER//
+                    &:hover {
+
+                         color: #222;
+                         transform: scale(1.1);
+                    }
+
+                    //A : LAST-CHILD//
+                    &:last-child {
+
+                         margin-right: 150px;
+                    }
+
+                    //A : BEFORE//
+                    &::before {
+
+                         position: absolute;
+                         content: '';
+                         bottom: -3px;
+                         left: 0;
+                         width: 100%;
+                         height: 2px;
+                         background-color: #222;
+                         visibility: hidden;
+                         transform: scaleX(0);
+                         transition: all 0.3s ease-in-out 0s;
+                    }
+
+                    //A:HOVER::BEFORE//
+                    &:hover::before {
+
+                         visibility: visible;
+                         transform: scaleX(1);
+                    }
+
+               }//a
+
+          }//nav
+
+     }//header
+
+     //CONTAINER : SOCIAL BAR//
+     .socialBar {
+
+          display: flex;
+          justify-content: center;
+          height: 130px;
+          border-bottom: solid 5px #f7dbe8;
+
+          //SOCIAL BAR : A//
+          a {
+
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 60px;
+               width: 60px;
+               text-decoration: none;
+               background-color: #fceff5;
+               margin: auto 15px;
+               border: 1px solid rgba(0, 0, 0, 0);
+               border-radius: 8px;
+               transition: transform 0.5s;
+               box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+               -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+               //A : I//
+               i {
+
+                    font-size: 35px;
+                    transition: transform 0.5s;
+               }
+
+               //A:HOVER//
+               &:hover {
+
+                    border: 1px solid rgba(0, 0, 0, 0.01);
+                    transform: translateY(2px);
+                    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+                    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+               }
+
+               //A:HOVER > I//
+               &:hover i {
+
+                    transform: scale(0.95);
+               }
+
+               //A : FACEBOOK//
+               & .fa-facebook {
+
+                    color: #3b5998;
+               }
+
+               //A : INSTAGRAM//
+               & .fa-instagram {
+
+                    color:#dc2e76;
+               }
+
+               //A : WHATSAPP//
+               & .fa-whatsapp {
+
+                    color: #4fce5d;
+               }
+
+               //A : TELEGRAM//
+               & .fa-telegram {
+
+                    color: #68c1ee;
+               }
+
+               //A : PINTEREST//
+               & .fa-pinterest {
+
+                    color: #e60019;
+               }
+
+               //A : TWITTER//
+               & .fa-twitter {
+
+                    color: #00acee;
+               }
+
+          }//a
+
+     }//.socialBar
+
+     //CONTAINER : FOOTER//
+     footer {
+
+          display: flex;
+          width: 100%;
+          height: 80px;
+          background-color: #fceff5;
+
+          //FOOTER : COPYRIGHT//
+          .copyright {
+               display: flex;
+               justify-content: left;
+               align-items: center;
+               width: 70%;
+               height: 100%;
+
+               //COPYRIGHT : IMG//
+               img {
+
+                    width: 70px;
+                    margin-left: 10px;
+               }
+
+               //COPYRIGHT : P//
+               p {
+
+                    cursor: default;
+                    display: inline;
+                    margin-left: 20px;
+               }
+
+          }//.copyright
+
+          //FOOTER : OTHER LINKS//
+          .otherLinks {
+
+               width: 30%;
+               height: 80%;
+               margin: auto;
+
+               //OTHER LINKS : A//
+               a {
+
+                    display: block;
+                    margin-bottom: 3px;
+                    color: #222;
+                    text-decoration: none;
+                    transition: color .2s;
+                    transition: padding-left .2s;
+
+                    //A:HOVER//
+                    &:hover {
+
+                         color: blue;
+                         padding-left: 20px;
+                    }
+
+               }//a
+
+          }//.otherLinks
+
+     }//footer
+
+}//.container

@@ -76,66 +76,6 @@ body {
   visibility: visible;
   transform: scaleX(1);
 }
-.container .products {
-  display: flex;
-  justify-content: space-evenly;
-  width: 1400px;
-  margin: 80px 0 20px 0;
-}
-.container .products div {
-  width: 400px;
-  height: 800px;
-  border: solid 5px #f7dbe8;
-  transition: transform 0.5s linear;
-}
-.container .products div p {
-  cursor: default;
-  color: transparent;
-  font-size: 14px;
-  font-weight: 200;
-  font-family: "Montserrat", sans-serif;
-  background-color: rgba(252, 239, 245, 0);
-  padding: 0 30px 10px 30px;
-  border-bottom: solid 3px transparent;
-  transition: 0.3s linear;
-}
-.container .products div p span {
-  display: block;
-  color: transparent;
-  font-size: 25px;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 10px;
-}
-.container .products div:hover {
-  transform: scale(1.03);
-}
-.container .products div:hover p {
-  color: #333;
-  background-color: rgba(252, 239, 245, 0.9);
-  border-bottom: solid 3px #f7dbe8;
-}
-.container .products div:hover span {
-  color: #333;
-}
-.container .products div:nth-child(1) {
-  background-image: url(../images/index/wineRed.jpg);
-  opacity: 80%;
-  transition: 0.3s linear;
-}
-.container .products div:nth-child(2) {
-  background-image: url(../images/index/wineRose.jpg);
-  opacity: 80%;
-  transition: 0.3s linear;
-}
-.container .products div:nth-child(3) {
-  background-image: url(../images/index/wineWhite.jpg);
-  opacity: 80%;
-  transition: 0.3s linear;
-}
-.container .products div:nth-child(1):hover, .container .products div:nth-child(2):hover, .container .products div:nth-child(3):hover {
-  opacity: 100%;
-}
 .container .socialBar {
   display: flex;
   justify-content: center;
@@ -219,9 +159,9 @@ body {
   color: #222;
   text-decoration: none;
   transition: color 0.2s;
-  transition: margin-left 0.2s;
+  transition: padding-left 0.2s;
 }
 .container footer .otherLinks a:hover {
   color: blue;
-  margin-left: 20px;
+  padding-left: 20px;
 }
