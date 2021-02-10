@@ -55,7 +55,6 @@
                     font-style: italic;
                     text-decoration: none;
                     margin: auto 70px auto 0;
-                    transition: .2s linear;
 
                     //A : LAST-CHILD//
                     &:last-child {
@@ -75,7 +74,6 @@
                          background-color: #222;
                          visibility: hidden;
                          transform: scaleX(0);
-                         transition: all 0.3s ease-in-out 0s;
                     }
 
                     //A:HOVER//
@@ -83,6 +81,7 @@
 
                          color: #222;
                          transform: scale(1.1);
+                         transition: .2s linear;
                     }
 
                     //A:HOVER::BEFORE//
@@ -90,6 +89,7 @@
 
                          visibility: visible;
                          transform: scaleX(1);
+                         transition: .2s linear;
                     }
 
                }//a
@@ -124,7 +124,6 @@
                height: 340px;
                background-color: rgb(185, 185, 185);
                margin: 4px;
-               transition: .3s linear;
 
                //GALLERY PHOTO:HOVER//
                &:hover {
@@ -132,6 +131,7 @@
                     border: solid 2px #646464;
                     border-radius: 2px;
                     transform: scale(1.06);
+                    transition: .3s linear;
                }
 
                &:nth-child(1) {
@@ -192,7 +192,6 @@
                width: 400px;
                height: 800px;
                border: solid 5px #f7dbe8;
-               transition: transform .5s linear;
       
                //DIV : P//
                p {
@@ -205,7 +204,6 @@
                     background-color: rgba($color: #fceff5, $alpha: 0);
                     padding: 0 30px 10px 30px;
                     border-bottom: solid 3px transparent;
-                    transition: .3s linear;
 
                     //P : SPAN//
                     & span {
@@ -224,6 +222,7 @@
                &:hover {
 
                     transform: scale(1.03);
+                    transition: .5s linear;
                }
 
                //DIV:HOVER > P//
@@ -232,12 +231,14 @@
                     color: #333;
                     background-color: rgba($color: #fceff5, $alpha: 0.9);
                     border-bottom: solid 3px #f7dbe8;
+                    transition: .3s linear;
                }
 
                //DIV:HOVER > SPAN//
                &:hover span {
 
                     color: #333;
+                    transition: .3s linear;
                }
 
                //DIV:NTH-CHILD(1)//
@@ -245,7 +246,6 @@
 
                     background-image: url(../images/productsPage/wineRed.jpg);
                     opacity: 80%;
-                    transition: .3s linear;
                }
 
                //DIV:NTH-CHILD(2)//
@@ -253,7 +253,6 @@
 
                     background-image: url(../images/productsPage/wineRose.jpg);
                     opacity: 80%;
-                    transition: .3s linear;
                }
 
                //DIV:NTH-CHILD(3)//
@@ -261,7 +260,6 @@
 
                     background-image: url(../images/productsPage/wineWhite.jpg);
                     opacity: 80%;
-                    transition: .3s linear;
                }
 
                //DIV:NTH-CHILD(1, 2, 3):HOVER//
@@ -270,6 +268,7 @@
                &:nth-child(3):hover {
 
                     opacity: 100%;
+                    transition: .3s linear;
                }
           
           }//div
@@ -306,7 +305,6 @@
                font-size: 70px;
                border: solid 2px rgba(#fff, .0);
                padding: 40px 120px;
-               transition: .6s linear;
           }
 
           //ABOUT US:HOVER > LINK BUTTON//
@@ -316,6 +314,7 @@
                background-color: rgba(#fff, .1);
                padding: 167px 482px;
                border: solid 2px rgba(#fff, 1);
+               transition: .6s linear;
           }
 
      }//.aboutUs
@@ -341,7 +340,6 @@
                margin: auto 15px;
                border: 1px solid rgba(0, 0, 0, 0);
                border-radius: 8px;
-               transition: transform 0.5s;
                box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 
@@ -349,7 +347,6 @@
                i {
 
                     font-size: 35px;
-                    transition: transform 0.5s;
                }
 
                //A:HOVER//
@@ -362,12 +359,14 @@
                     -0.5px -0.5px 0px rgba(255, 255, 255, 1),
                     0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
                     0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                    transition: transform 0.5s;
                }
 
                //A:HOVER > I//
                &:hover i {
 
                     transform: scale(0.95);
+                    transition: transform 0.5s;
                }
 
                //A : FACEBOOK//
@@ -457,13 +456,13 @@
                     margin-bottom: 3px;
                     color: #222;
                     text-decoration: none;
-                    transition: .2s linear;
 
                     //A:HOVER//
                     &:hover {
 
                          color: blue;
                          padding-left: 20px;
+                         transition: .2s linear;
                     }
 
                }//a

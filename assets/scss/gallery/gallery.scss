@@ -57,13 +57,13 @@
                     font-style: italic;
                     text-decoration: none;
                     margin: auto 70px auto 0;
-                    transition: transform .2s;
 
                     //A:HOVER//
                     &:hover {
 
                          color: #222;
                          transform: scale(1.1);
+                         transition: .2s;
                     }
 
                     //A : LAST-CHILD//
@@ -84,7 +84,6 @@
                          background-color: #222;
                          visibility: hidden;
                          transform: scaleX(0);
-                         transition: all 0.3s ease-in-out 0s;
                     }
 
                     //A:HOVER::BEFORE//
@@ -92,6 +91,7 @@
 
                          visibility: visible;
                          transform: scaleX(1);
+                         transition: .2s linear;
                     }
 
                }//a
@@ -142,7 +142,6 @@
                margin: auto 15px;
                border: 1px solid rgba(0, 0, 0, 0);
                border-radius: 8px;
-               transition: transform 0.5s;
                box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 
@@ -150,7 +149,6 @@
                i {
 
                     font-size: 35px;
-                    transition: transform 0.5s;
                }
 
                //A:HOVER//
@@ -163,12 +161,14 @@
                     -0.5px -0.5px 0px rgba(255, 255, 255, 1),
                     0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
                     0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                    transition: 0.5s;
                }
 
                //A:HOVER > I//
                &:hover i {
 
                     transform: scale(0.95);
+                    transition: transform 0.5s;
                }
 
                //A : FACEBOOK//
@@ -258,14 +258,13 @@
                     margin-bottom: 3px;
                     color: #222;
                     text-decoration: none;
-                    transition: color .2s;
-                    transition: padding-left .2s;
 
                     //A:HOVER//
                     &:hover {
 
                          color: blue;
                          padding-left: 20px;
+                         transition: .2s;
                     }
 
                }//a
