@@ -54,13 +54,12 @@ a, a:visited, a:hover {
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
-  text-decoration: none;
   margin: auto 70px auto 0;
+  transition: 0.2s linear;
 }
 .container header nav a:hover {
   color: #222;
   transform: scale(1.1);
-  transition: transform 0.2s;
 }
 .container header nav a:last-child {
   margin-right: 150px;
@@ -75,11 +74,11 @@ a, a:visited, a:hover {
   background-color: #222;
   visibility: hidden;
   transform: scaleX(0);
+  transition: 0.2s linear;
 }
 .container header nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
-  transition: 0.2s linear;
 }
 .container .products {
   display: flex;
@@ -91,6 +90,7 @@ a, a:visited, a:hover {
   width: 400px;
   height: 800px;
   border: solid 5px #f7dbe8;
+  transition: 0.4s linear;
 }
 .container .products div p {
   cursor: default;
@@ -101,6 +101,7 @@ a, a:visited, a:hover {
   background-color: rgba(252, 239, 245, 0);
   padding: 0 30px 10px 30px;
   border-bottom: solid 3px transparent;
+  transition: 0.3s linear;
 }
 .container .products div p span {
   display: block;
@@ -109,20 +110,18 @@ a, a:visited, a:hover {
   font-weight: 300;
   text-align: center;
   padding-top: 10px;
+  transition: 0.3s linear;
 }
 .container .products div:hover {
   transform: scale(1.03);
-  transition: 0.5s linear;
 }
 .container .products div:hover p {
   color: #333;
   background-color: rgba(252, 239, 245, 0.9);
   border-bottom: solid 3px #f7dbe8;
-  transition: 0.3s linear;
 }
 .container .products div:hover span {
   color: #333;
-  transition: 0.3s linear;
 }
 .container .products div:nth-child(1) {
   background-image: url(../images/productsPage/wineRed.jpg);
@@ -152,25 +151,20 @@ a, a:visited, a:hover {
   align-items: center;
   height: 60px;
   width: 60px;
-  text-decoration: none;
   background-color: #fceff5;
   margin: auto 15px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 8px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  transition: 0.2s linear;
 }
 .container .socialBar a i {
-  font-size: 35px;
+  font-size: 40px;
 }
 .container .socialBar a:hover {
   border: 1px solid rgba(0, 0, 0, 0.01);
-  transform: translateY(2px);
+  transform: translateY(5px);
   box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-  transition: 0.5s;
-}
-.container .socialBar a:hover i {
-  transform: scale(0.95);
-  transition: 0.5s;
 }
 .container .socialBar a .fa-facebook {
   color: #3b5998;
@@ -221,10 +215,9 @@ a, a:visited, a:hover {
   display: block;
   margin-bottom: 3px;
   color: #222;
-  text-decoration: none;
+  transition: 0.2s linear;
 }
 .container footer .otherLinks a:hover {
   color: blue;
   padding-left: 20px;
-  transition: 0.2s;
 }
