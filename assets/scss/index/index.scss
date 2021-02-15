@@ -75,6 +75,18 @@
                          transition: .2s linear;
                     }
 
+                    &:nth-child(1) {
+
+                         color: #222;
+                         transform: scale(1.1);
+                    }
+
+                    &:nth-child(1)::before {
+
+                         visibility: visible;
+                         transform: scaleX(1);
+                    }
+
                     //A:HOVER//
                     &:hover {
 

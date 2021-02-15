@@ -4,6 +4,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 *, * before, * after {
   box-sizing: border-box;
   padding: 0;
@@ -76,9 +83,29 @@ a, a:visited, a:hover {
   transform: scaleX(0);
   transition: 0.2s linear;
 }
+.container header nav a:nth-child(4) {
+  color: #222;
+  transform: scale(1.1);
+}
+.container header nav a:nth-child(4)::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 .container header nav a:hover::before {
   visibility: visible;
   transform: scaleX(1);
+}
+.container main .history {
+  width: 100%;
+  height: 400px;
+  background-color: #888;
+  text-align: center;
+}
+.container main .history h2 {
+  margin: 20px;
+}
+.container main .history p {
+  margin: 25px;
 }
 .container .socialBar {
   display: flex;

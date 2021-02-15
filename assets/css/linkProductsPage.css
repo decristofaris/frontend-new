@@ -4,6 +4,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.preload {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
 *, * before, * after {
   box-sizing: border-box;
   padding: 0;
@@ -75,6 +82,14 @@ a, a:visited, a:hover {
   visibility: hidden;
   transform: scaleX(0);
   transition: 0.2s linear;
+}
+.container header nav a:nth-child(3) {
+  color: #222;
+  transform: scale(1.1);
+}
+.container header nav a:nth-child(3)::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 .container header nav a:hover::before {
   visibility: visible;

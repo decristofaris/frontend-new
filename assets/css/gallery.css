@@ -1,27 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
-body {
-  background-color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
-
-.preload {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
-*, * before, * after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a, a:visited, a:hover {
-  color: #000;
-  text-decoration: none;
-}
-
 .container {
   width: 1600px;
   height: -webkit-max-content;
