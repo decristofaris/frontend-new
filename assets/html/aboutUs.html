@@ -20,6 +20,9 @@
 
           <!--JS FIX TRANSITION-->
           <script src="../js/preload.js"></script>
+
+          <!--JS GOOGLE MAP-->
+          <script src="../js/maps.js"></script>
           
      </head>
 
@@ -82,24 +85,26 @@
                                    <label for="radio4" class="manual-btn"></label>
                         
                               </div>
-                              
+                                                       
                          </div>
 
+                    </div>
+
+                    <div class="info">
+
+                         <div>
+                              <h2>Dove Siamo</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores provident expedita minus, corrupti sequi atque voluptate voluptatibus quam cum, labore consectetur tenetur? Exercitationem quibusdam officiis impedit, est dicta ipsa aliquam!</p>
+                         </div>
+                         <div id="map"></div>
+                         
+                    
                     </div>
 
                </main>
 
                <!--SOCIAL BAR-->
-               <div class="socialBar">
-
-                    <a href="#" rel="facebookLink"><i class="fab fa-facebook"></i></a>
-                    <a href="#" rel="instagramLink"><i class="fab fa-instagram"></i></a>
-                    <a href="#" rel="whatsappLink"><i class="fab fa-whatsapp"></i></a>
-                    <a href="#" rel="telegramLink"><i class="fab fa-telegram"></i></a>
-                    <a href="#" rel="pinterestLink"><i class="fab fa-pinterest"></i></a>
-                    <a href="#" rel="twitterLink"><i class="fab fa-twitter"></i></a>
-
-               </div><!--/.socialBar-->
+               <!--/.socialBar-->
 
                <footer>
 
@@ -123,6 +128,8 @@
                </footer>
 
           </div><!--/.container-->
+
+          <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0MMbO5fRFrDl8qLGZmHJZ6CaGxu-HBPY&callback=initMap"></script>
 
      </body>
 

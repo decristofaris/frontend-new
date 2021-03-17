@@ -198,91 +198,26 @@
 
           margin-left: -60%;
      }
-        
-        
 
-     //CONTAINER : SOCIAL BAR//
-     .socialBar {
-
+     .info {
           display: flex;
-          justify-content: center;
-          height: 130px;
-          border-bottom: solid 5px #f7dbe8;
+          height: 450px;
 
-          //SOCIAL BAR : A//
-          a {
+          div {
+               width: 50%;
 
-               display: flex;
-               justify-content: center;
-               align-items: center;
-               height: 60px;
-               width: 60px;
-               background-color: #fceff5;
-               margin: auto 15px;
-               border: 1px solid rgba(0, 0, 0, 0);
-               border-radius: 8px;
-               box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-               -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-               transition: .2s linear;
+               &:nth-of-type(1) {
 
-               //A : I//
-               i {
-
-                    font-size: 40px;
+                    //background-color: red;
                }
+          }
 
-               //A:HOVER//
-               &:hover {
+          #map {
 
-                    border: 1px solid rgba(0, 0, 0, 0.01);
-                    transform: translateY(5px);
-                    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                    0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-               }
-
-               //A : FACEBOOK//
-               & .fa-facebook {
-
-                    color: #3b5998;
-               }
-
-               //A : INSTAGRAM//
-               & .fa-instagram {
-
-                    color:#dc2e76;
-               }
-
-               //A : WHATSAPP//
-               & .fa-whatsapp {
-
-                    color: #4fce5d;
-               }
-
-               //A : TELEGRAM//
-               & .fa-telegram {
-
-                    color: #68c1ee;
-               }
-
-               //A : PINTEREST//
-               & .fa-pinterest {
-
-                    color: #e60019;
-               }
-
-               //A : TWITTER//
-               & .fa-twitter {
-
-                    color: #00acee;
-               }
-
-          }//a
-
-     }//.socialBar
-
+               width: 50%;
+          }
+     }       
+          
      //CONTAINER : FOOTER//
      footer {
 

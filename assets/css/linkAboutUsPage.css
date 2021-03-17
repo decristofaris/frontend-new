@@ -156,50 +156,15 @@ a, a:visited, a:hover {
 .container #radio4:checked ~ .first {
   margin-left: -60%;
 }
-.container .socialBar {
+.container .info {
   display: flex;
-  justify-content: center;
-  height: 130px;
-  border-bottom: solid 5px #f7dbe8;
+  height: 450px;
 }
-.container .socialBar a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 60px;
-  background-color: #fceff5;
-  margin: auto 15px;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 8px;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-  transition: 0.2s linear;
+.container .info div {
+  width: 50%;
 }
-.container .socialBar a i {
-  font-size: 40px;
-}
-.container .socialBar a:hover {
-  border: 1px solid rgba(0, 0, 0, 0.01);
-  transform: translateY(5px);
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-.container .socialBar a .fa-facebook {
-  color: #3b5998;
-}
-.container .socialBar a .fa-instagram {
-  color: #dc2e76;
-}
-.container .socialBar a .fa-whatsapp {
-  color: #4fce5d;
-}
-.container .socialBar a .fa-telegram {
-  color: #68c1ee;
-}
-.container .socialBar a .fa-pinterest {
-  color: #e60019;
-}
-.container .socialBar a .fa-twitter {
-  color: #00acee;
+.container .info #map {
+  width: 50%;
 }
 .container footer {
   display: flex;
