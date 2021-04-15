@@ -11,13 +11,17 @@ body {
   -o-transition: none !important;
 }
 
-*, * before, * after {
+*,
+* before,
+* after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   color: #000;
   text-decoration: none;
 }
@@ -64,20 +68,17 @@ a, a:visited, a:hover {
   font-weight: 400;
   font-style: italic;
   margin: auto 70px auto 0;
-  transition: 0.2s linear;
+  transition: 0.1s linear;
 }
 .container header nav a:hover {
-  color: #333;
+  color: #3f1327;
   transform: scale(1.2);
 }
 .container header nav a:nth-child(2) {
   cursor: default;
-  background-color: #fceff5;
-  color: #333;
-  padding: 10px 15px;
-  border-radius: 2px;
-  transform: scale(1.3);
-  box-shadow: 0px 0px 4px 1px #888;
+  color: #3f1327;
+  font-weight: 900;
+  transform: scale(1.4);
 }
 .container header nav a:last-child {
   margin-right: 150px;
@@ -107,7 +108,7 @@ a, a:visited, a:hover {
 .container .socialBar {
   display: flex;
   justify-content: center;
-  height: 130px;
+  height: 120px;
 }
 .container .socialBar a {
   display: flex;
@@ -115,38 +116,18 @@ a, a:visited, a:hover {
   align-items: center;
   height: 60px;
   width: 60px;
-  background-color: #fceff5;
   margin: auto 15px;
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 8px;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-  transition: 0.2s linear;
+  border-radius: 3px;
+  box-shadow: 0 0 8px 1px #ddd;
+  transition: 0.1s linear;
 }
-.container .socialBar a i {
-  font-size: 40px;
+.container .socialBar a img {
+  transform: scale(0.8);
 }
 .container .socialBar a:hover {
-  border: 1px solid rgba(0, 0, 0, 0.01);
-  transform: translateY(5px);
-  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px white, 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
-}
-.container .socialBar a .fa-facebook {
-  color: #3b5998;
-}
-.container .socialBar a .fa-instagram {
-  color: #dc2e76;
-}
-.container .socialBar a .fa-whatsapp {
-  color: #4fce5d;
-}
-.container .socialBar a .fa-telegram {
-  color: #68c1ee;
-}
-.container .socialBar a .fa-pinterest {
-  color: #e60019;
-}
-.container .socialBar a .fa-twitter {
-  color: #00acee;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 1px #bbb;
+  transform: scale(1.1);
 }
 .container footer {
   display: flex;
