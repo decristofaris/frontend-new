@@ -203,22 +203,33 @@
           justify-content: center;
           align-items: center;
           cursor: pointer;
+          user-select: none;
           width: 95%;
           height: 480px;
           background-image: url(../images/indexPage/aboutUsBackground.jpg);
+          opacity: 90%;
           margin: 80px auto 0 auto;
-          border: solid 5px #f7dbe8;
+          border: solid 1px #ccc;
           border-radius: 10px;
           transition: 0.2s linear;
+          box-shadow: 0 0 8px 3px #ccc;
 
-          .linkAboutUs {
-               color: rgba(#fff, 0.5);
-               font-size: 70px;
-               transition: 0.2s linear;
+          a {
+               padding: 190px 460px 190px 460px;
+
+               .linkAboutUs {
+                    color: rgba(#fff, 0.2);
+                    font-size: 70px;
+                    transition: 0.2s linear;
+               }
           }
 
           &:hover {
                transform: scale(1.02);
+               opacity: 100%;
+               border: solid 1px #bbb;
+               border-radius: 15px;
+               box-shadow: 0 0 8px 3px #bbb;
           }
 
           &:hover .linkAboutUs {
@@ -230,6 +241,7 @@
      .socialBar {
           display: flex;
           justify-content: center;
+          user-select: none;
           height: 120px;
 
           a {

@@ -139,6 +139,7 @@
      .socialBar {
           display: flex;
           justify-content: center;
+          user-select: none;
           height: 120px;
 
           a {

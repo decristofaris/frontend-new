@@ -198,21 +198,32 @@ a:hover {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
   width: 95%;
   height: 480px;
   background-image: url(../images/indexPage/aboutUsBackground.jpg);
+  opacity: 90%;
   margin: 80px auto 0 auto;
-  border: solid 5px #f7dbe8;
+  border: solid 1px #ccc;
   border-radius: 10px;
   transition: 0.2s linear;
+  box-shadow: 0 0 8px 3px #ccc;
 }
-.container .aboutUs .linkAboutUs {
-  color: rgba(255, 255, 255, 0.5);
+.container .aboutUs a {
+  padding: 190px 460px 190px 460px;
+}
+.container .aboutUs a .linkAboutUs {
+  color: rgba(255, 255, 255, 0.2);
   font-size: 70px;
   transition: 0.2s linear;
 }
 .container .aboutUs:hover {
   transform: scale(1.02);
+  opacity: 100%;
+  border: solid 1px #bbb;
+  border-radius: 15px;
+  box-shadow: 0 0 8px 3px #bbb;
 }
 .container .aboutUs:hover .linkAboutUs {
   color: white;
@@ -221,6 +232,8 @@ a:hover {
 .container .socialBar {
   display: flex;
   justify-content: center;
+  -webkit-user-select: none;
+          user-select: none;
   height: 120px;
 }
 .container .socialBar a {

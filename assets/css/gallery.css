@@ -108,6 +108,8 @@ a:hover {
 .container .socialBar {
   display: flex;
   justify-content: center;
+  -webkit-user-select: none;
+          user-select: none;
   height: 120px;
 }
 .container .socialBar a {
